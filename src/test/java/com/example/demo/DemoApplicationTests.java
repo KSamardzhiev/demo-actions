@@ -10,4 +10,9 @@ class DemoApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test void testTalentBoostMethod() {
+		TalentBoostGreeting tbg = new TalentBoostController().talentboost("Peter");
+		assert tbg.content().equals("Welcome to TalenBoost 2023, Peter!");
+	}
+
 }
